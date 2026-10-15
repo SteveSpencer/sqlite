@@ -10,4 +10,4 @@ File-level access is done using a custom SQLite VFS, and the fatfs library from 
 
 This was mainly done so that the existing folder structure of circle home, with lib, addon and app subfolders could be used when developing.
 
-There are some minor changes needed to the original sqlite3.c amalgamation file, which are easily identifed by searching for SQLITE_CIRCLE in the modified code. They are needed to stop the compiler from tring to include a non-existent header, and to stop a couple of macro functions from being redefined.
+There are some minor changes needed to the original sqlite3.c amalgamation file, which are easily identifed by searching for SQLITE_CIRCLE in the modified code. They are needed to stop the compiler from trying to include a non-existent header, and to stop a couple of macro functions from being redefined.
